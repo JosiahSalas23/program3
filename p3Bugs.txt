@@ -1,0 +1,47 @@
+IglooScore1 bugs
+
+In the function overallScore()
+
+under the if(score1 < score2)
+I changed the code from 
+s = score2; 
+to
+s = score1;
+so it can calculate the right score
+
+under the else condition
+I change the code from 
+s = score1;
+to 
+s = score2; 
+so it can calculate the right score
+ 
+In the main function
+You do not check if the scores are at or between 0 and 50.
+Right now the user can input negative values or scores higher than 50
+
+IglooScore2 bugs
+
+In the function overallScore()
+
+under the else if (score2 < score1 && score2 < score3)
+I changed the code from
+s1 = score1;
+s2 = score2;
+to
+s1 = score1;
+s2 = score3;
+so it can calculate the right score
+
+under the else condition
+I change the code from
+s1 = 99;
+s2 = 99;
+to
+s1 = score1;
+s2 = score2;
+so it can calculate the right score
+
+In the main function
+There is no way to test if the String args[] == null in java.
+So I removed (args == null) since its imposible to test and args.Length != 3 already takes care of that.
